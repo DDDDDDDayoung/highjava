@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<style>
+span{
+	display : inline-block;
+	width : 100px;
+	height : 30px;
+}
+</style>
+
+<script type = "text/javascript">
+
+	
+	//calc = function() {}
+	//calc = () => {   }
+	function calc() {
+		/*
+		//id=price 요소 검색
+		var vprice = document.getElementById('price');
+		var vprice = document.querySelector('#price');
+		
+		//id=qty 요소 검색
+		var vqty = document.getElementById('qty');
+		var vqty = document.querySelector('#qty');
+		
+		//검색요소에서 값 가져오기 -String 값으로 리턴한다
+		let priceValue = vprice.value;
+		let qtyValue = vqty.value; 
+		*/
+		
+		let priceValue = document.getElementById('price').value;
+		let qytValue = document.getElementById('qty').value;
+		
+		//가져온 값으로 계산
+		let res = priceValue * qtyValue;
+		
+		//계산된 결과값을 출력
+		alert("결과값 : " + res );
+		
+	}
+	
+	
+</script>
+</head>
+
+
+<body>
+
+<!-- html 주석 <p>hello</p> -->
+
+<pre>
+type=button인 요소는 기능이 없다
+기능을 부여하기 위하여 javascript가 필요하다
+</pre>
+
+<form name="input" action ="getid.jsp" method="get">
+
+	<span>물품가격: </span>
+	<input type="number" id="price" value="20000" min="10000" max="100000" step="100" name= "user" > <br>
+	
+	<span>수량: </span>
+	<input type="number" id="qty" name= "su" > <br>
+	
+	<input type="button" value="계산" onclick="calc()" >
+</form>
+
+<script type = "text/javascript">
+	
+</script>
+
+
+
+</body>
+</html>
