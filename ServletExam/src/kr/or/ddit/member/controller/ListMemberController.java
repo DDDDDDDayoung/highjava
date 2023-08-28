@@ -14,7 +14,7 @@ import kr.or.ddit.member.service.IMemberService;
 import kr.or.ddit.member.service.MemberServiceImpl;
 import kr.or.ddit.member.vo.MemberVO;
 
-@WebServlet(value = "/member/list.do")
+@WebServlet("/member/list.do")
 public class ListMemberController extends HttpServlet{
 	
 	@Override

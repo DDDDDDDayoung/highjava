@@ -1,19 +1,13 @@
 package kr.or.ddit.member;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Date;
+
 import java.util.List;
 import java.util.Scanner;
 
-import kr.or.ddit.member.dao.MemberDaoImplForJDBC;
+
 import kr.or.ddit.member.service.IMemberService;
 import kr.or.ddit.member.service.MemberServiceImpl;
 import kr.or.ddit.member.vo.MemberVO;
-import kr.or.ddit.util.JDBCUtil3;
+
 
 /*
 	회원정보를 관리하는 프로그램을 작성하는데 

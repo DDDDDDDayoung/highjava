@@ -45,7 +45,7 @@
 %>
 		<tr>
 			<td><%=mv.getMemId() %></td>
-			<td><%=mv.getMemName() %></td>
+			<td><a href="detail.do?memId=<%=mv.getMemId() %>"><%=mv.getMemName() %></a></td>
 			<td><%=mv.getMemTel() %></td>
 			<td><%=mv.getMemAddr() %></td>
 		</tr>
